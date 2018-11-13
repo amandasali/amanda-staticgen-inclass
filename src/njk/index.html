@@ -7,16 +7,21 @@
 <div class="container">
  
   <div class="row">
-    <div class="col">
+
+ <div class="col-xs-0-col-sm-0-col-md-2-col-lg-2"></div>
+    <div class="col-xs-12-col-sm-12-col-md-8-col-lg-8">
     <p>
-      Lucas ipsum dolor <a href="detail-page.html">link to detail-page.html</a> amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.
+      Yo ho! A Pirate's Life for Me <a href="detail-page.html">link to detail-page.html</a> We pillage plunder, we rifle and loot. Drink up me 'earties, yo ho. we kidnap and ravage and don't give a hoot. Drink up me 'earties, yo ho! Yo ho, yo ho, a pirate's life for me! We extort and pilfer, we filch and sack. Drink up me 'earties, yo ho!
     </p>
       <ul> 
-       {% for entry in entries %}
-  <li>{{ entry.title }}, {{ entry.date }}, {{ entry.url}}</li>
-{% endfor %}
+      {% for entry in entries %}
+           <h3 class="entry-headline"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+           <p class="entry-date">{{ entry.date }}</p>
+           <hr>
+      {% endfor %}
      </ul>
     </div>
   </div>
+   <div class="col-xs-0 col-sm-0 col-md-2-col-lg-2"></div>
 </div>
 {% endblock %}
